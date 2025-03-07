@@ -1,0 +1,8 @@
+[project]
+name = "namespace_test"
+description = "A toy example to make namespace packages from a repo"
+authors = [{name = "Jason Pruitt", email = "pruitt.jason8164@gmail.com"}]
+dynamic = ["version", "description"]
+readme = "README.md"
+version = "0.0.0"
+requires-python = ">=3.9"
