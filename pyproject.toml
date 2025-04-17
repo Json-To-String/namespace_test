@@ -1,8 +1,20 @@
+[build-system]
+requires = ["setuptools>=64", "wheel", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "namespace_test"
-description = "A toy example to make namespace packages from a repo"
-authors = [{name = "Jason Pruitt", email = "pruitt.jason8164@gmail.com"}]
-dynamic = ["version", "description"]
 readme = "README.md"
 version = "0.0.0"
-requires-python = ">=3.9"
+description = "A toy example to make namespace packages from a repo"
+authors = [
+    { name = "Jason Pruitt", email = "pruitt.jason8164@gmail.com" }
+]
+license = "BSD-2-Clause"
+dependencies = []  # Add any runtime dependencies here
+
+# [tool.setuptools.packages.find]
+# include = ["namespace_test.*"]
+
+[tool.setuptools.package-dir]
+"namespace_test" = "./namespace_test"
